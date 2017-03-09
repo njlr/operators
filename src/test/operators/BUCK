@@ -1,0 +1,25 @@
+cxx_binary(
+  name = 'operators',
+  srcs = [
+    'operators.cpp',
+  ],
+  compiler_flags = [
+    '-std=c++14',
+  ],
+  deps = [
+    '//:tao-operators',
+  ],
+)
+
+cxx_binary(
+  name = 'no-rvalue-reference-results',
+  srcs = [
+    'no_rvalue_reference_results.cpp',
+  ],
+  compiler_flags = [
+    '-std=c++14',
+  ],
+  deps = [
+    '//:tao-operators',
+  ],
+)
